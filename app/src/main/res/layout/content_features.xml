@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.junctiontech.searchb4kharch.FeaturesActivity"
+    tools:showIn="@layout/activity_features">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/features_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d9dadc"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/low_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="General"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                &lt;!&ndash;<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="onClickProductDetailFeatureViewMore"
+                    android:text="VIEW MORE ->"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:visibility="invisible"
+                    tools:targetApi="ice_cream_sandwich" />&ndash;&gt;
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Network" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="3G" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="2"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Micro Sim" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="2"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Yes" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1sp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:padding="@dimen/low_padding"
+                    android:text="Dual SIM"  />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1sp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:padding="@dimen/low_padding"
+                    android:text="Yes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1sp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:padding="@dimen/low_padding"
+                    android:text="Touch-Screen" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1sp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:padding="@dimen/low_padding"
+                    android:text="Yes" />
+
+            </LinearLayout>
+
+               &lt;!&ndash; <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Dual SIM" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Yes" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Touch-Screen" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Yes" />
+
+                </TableRow>&ndash;&gt;
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/low_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Body"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                &lt;!&ndash; <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@null"
+                     android:onClick="onClickProductDetailFeatureViewMore"
+                     android:text="VIEW MORE ->"
+                     android:textColor="@android:color/holo_blue_bright"
+                     android:visibility="invisible"
+                     tools:targetApi="ice_cream_sandwich" />&ndash;&gt;
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1sp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:padding="@dimen/low_padding"
+                    android:text="Type" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1sp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:padding="@dimen/low_padding"
+                    android:text="Bar" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/low_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Display"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                &lt;!&ndash;<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="onClickProductDetailFeatureViewMore"
+                    android:text="VIEW MORE ->"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:visibility="invisible"
+                    tools:targetApi="ice_cream_sandwich" />&ndash;&gt;
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6sp"
+                android:gravity="center">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Screen Size" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="5.0 inch" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Screen Resolution" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="1080 * 1920 px" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Display Type" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="TFT - LCD" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Genaral"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                &lt;!&ndash;<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="onClickProductDetailFeatureViewMore"
+                    android:text="VIEW MORE ->"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:visibility="invisible"
+                    tools:targetApi="ice_cream_sandwich" />&ndash;&gt;
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6sp"
+                android:weightSum="2">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="Internal Memory" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="16 GB" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="External Memory" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="32 GB" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="RAM" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1sp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:padding="@dimen/low_padding"
+                        android:text="2 GB" />
+
+                </TableRow>
+
+
+            </TableLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

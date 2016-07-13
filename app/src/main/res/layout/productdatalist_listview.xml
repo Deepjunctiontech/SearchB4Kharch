@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/oll_padding"
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_productdatalist_img"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@null"/>
+
+    <!--android:adjustViewBounds="true"
+       android:scaleType="fitXY"
+       android:scaleX="0.5"
+       android:scaleY="0.5"-->
+
+    <LinearLayout
+        android:layout_weight="20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/oll_padding"
+        android:paddingTop="@dimen/oll_padding"
+        android:paddingBottom="@dimen/oll_padding">
+        <TextView
+            android:id="@+id/tv_productdatalist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="LeEco Day - 5% CAshBack + Exchange "
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_productdatalist_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="Super Offers "
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_productdatalist_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="Flipkart"
+            android:textSize="12sp"
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_weight="50"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_send"/>
+
+</LinearLayout>

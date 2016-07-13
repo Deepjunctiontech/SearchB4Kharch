@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Popular Categories"
+        android:icon="@drawable/popular"
+        android:id="@+id/popular_categories">
+        <menu>
+
+            <item android:id="@+id/mobiles" android:icon="@drawable/login"
+                android:title="Mobiles" />
+
+            <item android:id="@+id/tablets" android:icon="@drawable/logout"
+                android:title="Tablets" />
+
+            <item android:id="@+id/harddisks" android:icon="@drawable/coupon"
+                android:title="Hard Disks" />
+
+            <item android:id="@+id/televisions" android:icon="@android:drawable/star_big_off"
+                android:title="Televisions" />
+            <item android:id="@+id/cameras" android:icon="@android:drawable/ic_menu_call"
+                android:title="Cameras" />
+            <item android:id="@+id/books" android:icon="@android:drawable/ic_menu_share"
+                android:title="Books" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <!--<item android:id="@+id/popular_categories" android:icon="@drawable/popular"
+            android:title="Popular Categories" />
+        <item android:id="@+id/nav_gallery" android:icon="@drawable/allcategory"
+            android:title="All Categories" />-->
+
+    </group>
+
+    <item android:title="All Categories"
+        android:icon="@drawable/allcategory"
+        android:id="@+id/nav_gallery"
+        >
+        <menu>
+
+            <item android:id="@+id/electronics" android:icon="@drawable/login"
+                android:title="Electronics" />
+
+            <item android:id="@+id/largeAppliances" android:icon="@drawable/logout"
+                android:title="Large Appliances" />
+
+            <item android:id="@+id/smallAppliances" android:icon="@drawable/coupon"
+                android:title="Small Appliances" />
+
+            <item android:id="@+id/kitchenAppliances" android:icon="@android:drawable/star_big_off"
+                android:title="Kitchen Appliances" />
+            <item android:id="@+id/personalCareAppliances" android:icon="@android:drawable/ic_menu_call"
+                android:title="Personal Care Appliances" />
+            <item android:id="@+id/healthFitness" android:icon="@android:drawable/ic_menu_share"
+                android:title="Health / Fitness" />
+
+            <item android:id="@+id/audioVideo" android:icon="@android:drawable/ic_menu_share"
+                android:title="Audio / Video" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <!--<item android:id="@+id/popular_categories" android:icon="@drawable/popular"
+            android:title="Popular Categories" />
+        <item android:id="@+id/nav_gallery" android:icon="@drawable/allcategory"
+            android:title="All Categories" />-->
+
+    </group>
+
+
+
+    <item android:title="Others">
+        <menu>
+
+            <item android:id="@+id/login" android:icon="@drawable/login"
+                android:title="Login" />
+
+            <item android:id="@+id/logout" android:icon="@drawable/logout"
+                android:title="Logout" />
+
+            <item android:id="@+id/coupon_of_the_day" android:icon="@drawable/coupon"
+                android:title="Coupon of the day" />
+
+            <item android:id="@+id/rate_our_app" android:icon="@android:drawable/star_big_off"
+            android:title="Rate our app" />
+            <item android:id="@+id/contact_us" android:icon="@android:drawable/ic_menu_call"
+                android:title="Contact us" />
+            <item android:id="@+id/share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Share our app" />
+        </menu>
+    </item>
+
+</menu>

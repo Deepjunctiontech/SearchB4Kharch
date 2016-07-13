@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundnew"
+    tools:context="in.junctiontech.searchb4kharch.PriceAlertsActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price Alerts"
+        />
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pricealertsnew"
+        android:gravity="center"
+        android:id="@+id/imageView2" />-->
+
+    <ImageView
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bellnew1"
+        android:gravity="center"
+        android:layout_below="@+id/tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:alpha="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#045991"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Set price alerts to get notified when the price drops for your favourite products."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4sp"
+            android:textColor="#000708"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onClickPriceAlertsSkip"
+                android:text="SKIP"
+                android:textColor="#00eeff" />
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onClickPriceAlertsNext"
+                android:text="NEXT"
+                android:textColor="#00eeff"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

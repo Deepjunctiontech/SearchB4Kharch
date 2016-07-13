@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#100f10</color>
+    <color name="black_overlay">#66fd0707</color>
+    <color name="orange_transparent">#AAFADCA7</color>
+    <color name="actionbarcolor">#f77c14</color>
+    <color name="divider">#a95c5777</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+    <color name="toolbarcolor">#3c103e</color>
+    <color name="toolbarcolordark">#020002</color>
+    <color name="red">#f00</color>
+    <color name="parent_background">#fdf4fc</color>
+    <color name="lighttoolbarcolor">#b97dbc</color>
+</resources>

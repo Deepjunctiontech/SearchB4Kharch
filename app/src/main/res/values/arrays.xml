@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sample">
+        <item>"PMR"</item>
+        <item>"Direct-To-Home payments"</item>
+        <item>"School fee payment"</item>
+        <item>"Movie Ticket"</item>
+        <item>"Electricity"</item>
+        <item>"Restaurant ticket"</item>
+        <item>"Fuel"</item>
+        <item>"Groceries"</item>
+        <item>"Home Loan EMI"</item>
+        <item>"Insurance Payment"</item>
+        <item>"Car Insurance"</item>
+        <item>"Mutual Fund Payments"</item>
+    </string-array>
+</resources>

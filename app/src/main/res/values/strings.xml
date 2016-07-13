@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SearchB4Kharch</string>
+
+    <string name="signup_activity">SignUp</string>
+    <string name="login_activity">Login</string>
+    <string name="forgotpassword_activity">Forgot Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="aboutapp">Searchb4kharch.com is one stop shopping assistant that helps you save time and money while shopping online.</string>
+    <string name="title_activity_coupon">Notification</string>
+    <string name="title_activity_contacus">Contact Us</string>
+    <string name="title_activity_bestdeal">Best Deals</string>
+    <string name="title_activity_productdetail">Product Details</string>
+    <string name="title_activity_features">Features</string>
+    <string name="title_activity_flights">Flights</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_hotels">Hotels</string>
+    <string name="facebook_app_id">228221864213482</string>
+    <!-- <string name="fb_login_protocol_scheme">fb1750726011810090</string>-->
+
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="activity_contestpoint">Contest Points</string>
+    <string name="title_activity_live_support">LiveSupportActivity</string>
+    <string name="activity_livechat">Live Support</string>
+</resources>

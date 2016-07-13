@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.junctiontech.searchb4kharch.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+
+    <ScrollView
+        android:id="@+id/home_scroll_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:smoothScrollbar="true"
+
+        >
+<!-- android:smoothScrollbar="true"
+        android:scrollingCache="false"
+        android:animationCache="false"-->
+        <LinearLayout
+            android:id="@+id/main_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybox"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_padding">
+
+
+                <Button
+                    android:id="@+id/btn_homeactivity_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableTop="@drawable/category1"
+                    android:onClick="onClickHomeCategory"
+                    android:text="CATEGORIES"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/btn_homeactivity_bestdeals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableTop="@drawable/best1"
+                    android:onClick="onClickHomeBestDeals"
+                    android:text="BEST DEALS"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--<ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:src="@drawable/pricematch" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d9dadc"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Top Products"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="View All->"
+                        android:textColor="@android:color/holo_blue_bright"
+                        android:visibility="invisible"
+                        tools:targetApi="ice_cream_sandwich" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recentlyviewed_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="230sp"
+                    android:scrollbars="none" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Top Deals"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:onClick="onClickHomeBestDeals"
+                        android:text="View All->"
+                        android:textColor="@android:color/holo_blue_bright"
+                        tools:targetApi="ice_cream_sandwich" />
+
+
+                </LinearLayout>
+
+
+                <!--HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        &lt;!&ndash;<Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#f00"
+                            android:padding="10dp"
+                            android:text="Button 1"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#0f0"
+                            android:padding="10dp"
+                            android:text="Button 2"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#00f"
+                            android:padding="10dp"
+                            android:text="Button 3"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#ff0"
+                            android:padding="10dp"
+                            android:text="Button 4"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#f0f"
+                            android:padding="10dp"
+                            android:text="Button 5"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#f90"
+                            android:padding="10dp"
+                            android:text="Button 6"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#f00"
+                            android:padding="10dp"
+                            android:text="Button 7"
+                            android:textColor="#ff9"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#444"
+                            android:padding="10dp"
+                            android:text="Button 8"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#ff002211"
+                            android:padding="10dp"
+                            android:text="Button 9"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="#0f0"
+                            android:padding="10dp"
+                            android:text="Button 10"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />&ndash;&gt;-->
+
+
+                <!-- </LinearLayout>
+
+             </HorizontalScrollView>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/topdeals_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="230sp"
+                    android:scrollbars="none" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Feature Products"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="View All->"
+                        android:textColor="@android:color/holo_blue_bright"
+                        android:visibility="invisible"
+                        tools:targetApi="ice_cream_sandwich" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/popularproducts_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="230sp"
+                    android:scrollbars="none" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="New Products"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="View All->"
+                        android:textColor="@android:color/holo_blue_bright"
+                        android:visibility="invisible"
+                        tools:targetApi="ice_cream_sandwich" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/popularmobiles_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="230sp"
+                    android:scrollbars="none" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

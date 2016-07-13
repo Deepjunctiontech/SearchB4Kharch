@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.junctiontech.searchb4kharch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Home" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/signup_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="@string/forgotpassword_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contacus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CouponActivity"
+            android:label="@string/title_activity_coupon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BestDealsActivity"
+            android:label="@string/title_activity_bestdeal"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:label="@string/title_activity_productdetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeaturesActivity"
+            android:label="@string/title_activity_features"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FrontActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HotelsActivity"
+            android:label="@string/title_activity_hotels"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlightsActivity"
+            android:label="@string/title_activity_flights"
+            android:screenOrientation="portrait"
+
+             />
+        <activity
+            android:name=".ProductDataListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".PriceAlertsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".DealsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".CouponOffersActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".ContestPointsActivity"
+            android:label="@string/activity_contestpoint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchAllStoresActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".LiveSupportActivity"
+            android:label="@string/activity_livechat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DealsDataActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SearchActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

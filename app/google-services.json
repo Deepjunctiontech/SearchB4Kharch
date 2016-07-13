@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "629213928015",
+    "project_id": "searchb4kharch"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629213928015:android:36705f5710c353d8",
+        "android_client_info": {
+          "package_name": "in.junctiontech.searchb4kharch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629213928015-ss61qlk82pg9f43cgppthun6l11kckv1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.junctiontech.searchb4kharch",
+            "certificate_hash": "7CFFE732BB80994C4D8DA4047F1AABE07674E4F0"
+          }
+        },
+        {
+          "client_id": "629213928015-2jinuomver2ffrfmim6jl39a231043te.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIvbsFCLT7yHQuJpsuB9DjMeMiDzgOUTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

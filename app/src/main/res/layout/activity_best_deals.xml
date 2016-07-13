@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.junctiontech.searchb4kharch.BestDealsActivity">
+
+
+   <!-- <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout_best_deals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+    <ListView
+        android:id="@+id/bestdeal_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:smoothScrollbar="true"
+
+        />
+<!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.junctiontech.searchb4kharch.SplashScreenActivity"
+    android:background="@drawable/side_nav_bar"
+    android:id="@+id/rel">
+
+    <TextView
+    android:id="@+id/imgLogo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@drawable/junction"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:text="SearchB4Kharch"
+    android:gravity="center"
+    android:textSize="40sp"
+    android:textColor="#fff"
+    android:textStyle="bold"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/sbk"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="SearchB4Kharch"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="The Ultimate Shopping Experience!"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="10sp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textStyle="italic"-->
+        <!--android:layout_below="@+id/imgLogo"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<include
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        />-->
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/low_padding">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybox"
+        android:orientation="horizontal"
+        android:padding="@dimen/low_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:orientation="horizontal">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/deals_category_thumbnail"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@null"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                <TextView
+                    android:paddingLeft="10sp"
+                    android:id="@+id/deals_category_offer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="vishal"
+                    android:textColor="@color/toolbarcolor"
+                    android:textSize="11sp"/>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="2sp"
+                        tools:ignore="NewApi" />
+
+
+                    <TextView
+                        android:paddingLeft="10sp"
+                        android:id="@+id/deals_category_coupon_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="3"
+                        android:text="vishal"
+                        android:textColor="@color/toolbarcolor"
+                        android:textSize="10sp"/>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="2sp"
+                        tools:ignore="NewApi" />
+
+
+                    <TextView
+                        android:paddingLeft="10sp"
+                        android:id="@+id/deals_category_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="vishal"
+                        android:textColor="@color/toolbarcolor"
+                        android:textSize="10sp"/>
+
+
+
+
+                </LinearLayout>
+
+                <!--android:adjustViewBounds="true"-->
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />-->
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="5sp"
+                tools:ignore="NewApi" />
+
+            <!-- <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="5dp"
+                 android:src="@drawable/dotted" />-->
+
+            <!-- <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/dotted"/>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/dotted" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="5sp"
+                tools:ignore="NewApi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Coupon Expiry"
+                    android:singleLine="true"
+                    android:textSize="14sp"/>
+
+                <!--      <TextView
+                          android:id="@+id/topdeals_price_caption"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:gravity="left"
+                          android:singleLine="true"
+                          android:text="Coupon Expiry"
+                          android:textSize="12sp"/>-->
+
+                <TextView
+                    android:id="@+id/deals_category_couponexpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@null"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="5sp"
+                tools:ignore="NewApi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybox"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_padding">-->
+
+
+                    <Button
+                        android:textSize="12sp"
+                        android:id="@+id/deals_category_couponcode"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dash_border"
+                        android:text="WEEK45"
+                        android:textColor="#f77c14"
+                        android:typeface="serif"
+                        android:onClick="onClickCouponCopy"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(Click to copy code and visit store)"
+                    android:gravity="center"
+                    android:textSize="13sp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="5sp"
+                tools:ignore="NewApi" />
+
+
+
+               <!-- <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/topdeals_merchant_thumbnail"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:src="@null"
+                    android:layout_weight="1"
+                    />-->
+
+                <!--  width was 180 sp-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+

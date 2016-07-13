@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/low_padding"
+    >
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/popularcategory_thumbnail"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginLeft="@dimen/oll_elevation"
+        android:src="@null" />
+
+
+    <TextView
+        android:id="@+id/tv_listview_populatcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="30sp"
+        android:shadowColor="@android:color/holo_purple"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:singleLine="true"
+        android:text="Home"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        tools:targetApi="ice_cream_sandwich" />
+
+
+</LinearLayout>

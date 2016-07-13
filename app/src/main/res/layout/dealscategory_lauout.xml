@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="100"
+    >
+
+        <LinearLayout
+            android:background="@drawable/bg_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5sp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2sp"
+            >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ic_contact"-->
+                <!--android:layout_width="60sp"-->
+                <!--android:layout_height="40sp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:src="@drawable/points"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="30sp"-->
+                <!--android:background="@color/divider"-->
+                <!--/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:layout_margin="15dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    >
+
+                    <TextView
+                        android:gravity="left"
+                        android:id="@+id/tv_category_deals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:textColor="@color/toolbarcolor"
+                        android:typeface="serif"
+                        android:textStyle="bold"
+                        android:text="Hello world"
+                        android:textSize="18sp"
+
+
+                        />
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_status_of_sending"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="70"-->
+                        <!--android:gravity="center"-->
+
+                        <!--android:textColor="#f7fbbb4f" />-->
+
+                </LinearLayout>
+<!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"         >
+                    <TextView
+                        android:id="@+id/tv_show_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:maxLines="1"
+
+                        android:textColor="#d61d2527" />
+                    <TextView
+                        android:id="@+id/tv_send_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+
+
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/divider"-->
+        <!--/>-->
+
+</LinearLayout>

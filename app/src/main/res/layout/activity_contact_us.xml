@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9dadc"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.junctiontech.searchb4kharch.ContactUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@drawable/mybox"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="30sp"
+            android:scrollHorizontally="true"
+            android:text="@string/aboutapp"
+            android:textColor="@android:color/black"
+            android:typeface="serif" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffc500"
+            android:text="Contact us via Email"
+            android:textColor="#fff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Others"
+
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8sp"
+            android:visibility="invisible" />
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybox"
+            android:drawableRight="@android:drawable/btn_star_big_on"
+            android:text="Rate our app" />
+
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybox"
+            android:drawableRight="@drawable/multiple"
+            android:text="Share with Friends" />
+
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybox"
+            android:drawableRight="@drawable/gift"
+            android:text="Coupon of the Day" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Reach us at"
+
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/mybox"
+            android:padding="@dimen/layout_padding"
+            >
+
+            <Button
+                android:background="@drawable/mybox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Junction Software Pvt. Ltd."
+                android:drawableLeft="@drawable/logoo"
+                android:textColor="#f77c14"
+                android:typeface="serif"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="532 Corporate Aashima Mall, Hosangabad Rd, Zone-I, Bhopal, Madhya Pradesh 462026" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8sp"
+                android:visibility="invisible" />
+            <Button
+                android:background="@drawable/mybox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8109069226, 0755-4053276"
+                android:drawableLeft="@android:drawable/sym_action_call"
+                android:textColor="#f77c14"
+                android:typeface="serif"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
